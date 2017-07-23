@@ -1,0 +1,405 @@
+/*service主体部分布局*/
+.main{
+	width: 1120px;
+    margin: 0 auto;
+    margin-top: 90px;
+    /* background: #fff; */
+    min-height: 860px;
+    overflow: hidden;
+}
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+}
+/*图片部分*/
+.banner{
+	width: 1120px;
+	height: 320px;
+	background-image: url(../../images/dximages/img_13c02252_service_banner.jpg);
+	background-size: 1120px 320px;
+	background-repeat: no-repeat;
+}
+
+/*服务nav*/
+.service-nav{
+	width: 1120px;
+	height: 130px;
+	margin: 30px 0px 20px 0px; 
+	background-color: #fff;
+}
+.service .service-nav a{
+	display:inline-block;
+	float:left;
+	width:20%;
+	box-sizing:border-box;
+	/* height:100%; */
+	border:1px solid transparent;
+	padding:20px 0 10px 0px;
+	text-align:center;
+	text-decoration:none;
+	font-size:16px;
+	line-height:16px;
+	color: #575D6A;
+}
+.service .service-nav a div{
+	margin:0 auto;
+	background:url(../../images/dximages/img_13c0223a_service_icon2.png) no-repeat -8px -10px;
+}
+.service .service-nav a p{
+	padding-top: 20px;
+}
+.service .service-nav .guide{
+	width:76px;
+	height:64px;
+	background-position:10px -8px;
+}
+.service .service-nav .console{
+	width:76px;
+	height:64px;
+	background-position:-65px -12px;
+}
+.service .service-nav .serve{
+	width:76px;
+	height:64px;
+	background-position:-140px -6px;
+}
+.service .service-nav .help{
+	width:70px;
+	height:64px;
+	background-position:-208px -5px;
+}
+.service .service-nav .advice{
+	width:76px;
+	height:64px;
+	background-position:-285px -2px;
+}
+.service .service-nav .active{
+	box-shadow:3px 3px 10px #eee;
+	-webkit-box-shadow:3px 3px 10px #eee;
+	-ms-box-shadow:3px 3px 10px #eee;
+	-moz-box-shadow:3px 3px 10px #eee;
+	border:1px solid #0fae6f;
+}
+.service .service-nav .active:hover{border:1px solid #0fae6f;}
+.service .service-nav .active p{color:#0fae6f}
+.service .service-nav .active .guide{background-position:5px -95px}
+.service .service-nav .active .console{background-position:-65px -97px}
+.service .service-nav .active .serve{background-position:-140px -91px}
+.service .service-nav .active .help{background-position:-205px -91px}
+.service .service-nav .active .advice{background-position:-277px -86px}
+
+/*服务nav结束*/
+
+
+/*service-content开始*/
+.guide-content,.console-content,.advice-content,.serve-content,.help-content{
+	padding:50px;
+	background-color:#fff;
+	display: none;
+}
+
+.guide-nav,.help-nav{
+	padding:5px 0 0 50px;
+	background:url(../../images/dximages/img_1a390108_service_icon_info.png) no-repeat left 0;
+	background-size:20px;
+	background-position:15px 4px;
+	border-bottom:1px solid #e2e5e7;
+}
+.guide-nav a,.help-nav a{
+	display:inline-block;
+	padding:0 5px 15px;
+	font-size:14px;
+	line-height:14px;
+	color: #575D6A;
+}
+.guide-nav a:hover,.help-nav a:hover{
+	text-decoration: none;
+}
+.guide-nav a.active,.help-nav a.active{
+	border-bottom:2px solid #0fae6f;
+}
+.guide-nav .line,.help-nav .line{
+	padding:3px 0;
+	border-right:1px solid #e2e5e7;
+	margin:0 15px;
+}
+
+.guide-subcontent .active,.help-subcontent .active{
+	display: block;
+}
+.subcontents{
+	padding-top: 35px;
+	display: none;
+}
+.guide-title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.content-p{
+	line-height: 23px;
+	color: #333333;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.content-table,.table-col2,.table-col4,.table-newCol2,.table-newcol3{
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.content-table tr td{
+	width: 33.3%;
+	line-height: 25px;
+	border:1px solid #EEEEEE;
+}
+
+.table-col2 tr td,.table-col4 tr td,.table-newCol2 tr td,.table-newcol3 tr td{
+	line-height: 25px;
+	border:1px solid #EEEEEE;
+}
+.table-col2 .td1{
+	width: 60%;
+}
+.table-col2 .td2{
+	width: 40%;
+}
+
+.table-col4 .td1{
+	width: 35%;
+}
+.table-col4 .td2{
+	width: 20%;
+}
+.table-col4 .td3{
+	width: 25%;
+}
+.table-col4 .td4{
+	width: 20%;
+}
+.table-newCol2 .td1{
+	width: 30%;
+}
+.table-newCol2 .td2{
+	width: 70%;
+}
+.table-newcol3 .td1{
+	width: 15%;
+}
+.table-newcol3 .td2{
+	width: 15%;
+}
+.table-newcol3 .td3{
+	width: 70%;
+}
+
+.content-active{
+	display: block;
+}
+
+/*console部分*/
+.console-box{
+	width: 760px;
+	height: 357px;
+	margin: 0 auto;
+}
+.console-box1,.console-box2{
+	width: 337px;
+	height: 277px;
+	display: inline-block;
+	margin: 20px;
+	padding-top: 40px;
+	float: left;
+	border:1px solid #E2E5E7;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.console-box1:hover,.console-box2:hover{
+	border:1px solid #5AB085;
+}
+.box1-pic{
+	width: 66px;
+	height: 54px;
+	margin: 0 auto;
+	background-image: url(../../images/dximages/img_c2118919_service_consoult_i2.png);
+	background-repeat: no-repeat;
+}
+.box-title{
+	line-height: 47px;
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: #575D6A;
+}
+
+.box2-pic{
+	width: 54px;
+	height: 54px;
+	margin: 0 auto;
+	background-image: url(../../images/dximages/img_c2118f70_service_consoult_i1.png);
+	background-repeat: no-repeat;
+}
+.box3-pic{
+	width: 54px;
+	height: 54px;
+	margin: 0 auto;
+	background-image: url(../../images/dximages/img_c2118f70_service_consoult_i1.png);
+	background-repeat: no-repeat;
+}
+.box4-pic{
+	width: 51px;
+	height: 53px;
+	margin: 0 auto;
+	background-image: url(../../images/dximages/img_5c807676_service_consoult_i3.png);
+	background-repeat: no-repeat;
+}
+
+.box-time{
+	text-align: center;
+	line-height: 20px;
+	font-size: 16px;
+	color: #575D6A;
+}
+
+.box-btn{
+	display:block;
+	width: 118px;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	border: 1px solid #25AE8A;
+	color: #25AE8A;
+	border-radius: 5px;
+	margin: 20px auto;
+}
+.box-btn:hover{
+	text-decoration: none;
+	color: #25AE8A;
+}
+
+.box-footer{
+	text-align: center;
+	line-height: 20px;
+	color: #ABB0BC;
+	/* margin-top:20px;  */
+}
+
+.box-phone{
+	text-align: center;
+	line-height: 80px;
+}
+.phone-font{
+	font-size: 16px;
+	font-weight: bold;
+	color: #25AE8A;
+}
+
+.question-p{
+	position: relative;
+	line-height: 30px;
+	text-indent: 40px;
+}
+.question-icon{
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	width: 22px;
+	height: 24px;
+	display: inline-block;
+	background:url(../../images/dximages/img_6b9074ce_service_serve_icon.png) no-repeat;
+}
+
+.question-btn{
+	font-size: 16px;
+	font-weight: bold;
+	color: #5AAE9C;
+}
+.question-btn:hover{
+	color: #5AAE9C;
+	text-decoration: none;
+}
+
+
+/*屏幕小于775的时候,改变样式*/
+@media only screen and (max-width:775px){
+	.banner{
+		width: 100%;
+		height: auto;
+		padding-top:28.6%;
+		background-size: cover;
+	}
+	.main{
+		width: 100%;
+		height: auto;
+	}
+	.service-nav{
+		width: 100%;
+		max-height: 80px !important;
+	}
+	.service-nav a{
+		/* height: auto; */
+		padding: 10px 0!important;
+		font-size: 12px !important;
+	}
+	.service-nav a p{
+		padding-top: 0px !important;
+	}
+	.service-nav a .guide,.console,.help,.advice,.serve{
+		width: 30px!important;
+    	height: 35px!important;
+    	background-size: 150px!important;
+	}
+	.service .service-nav .guide{
+		background-position:5px 0px !important;
+	}
+	.service .service-nav .console{
+		background-position:-25px 0px !important;
+	}
+	.service .service-nav .advice{
+		background-position:-119px 0px !important;
+	}
+	.service .service-nav .help{
+		background-position:-85px 0px !important;
+	}
+	.service .service-nav .serve{
+		background-position:-55px 0px !important;
+	}
+	.service .service-nav .active .guide{background-position:5px -35px!important;}
+	.service .service-nav .active .console{background-position:-25px -35px!important;}
+	.service .service-nav .active .help{background-position:-85px -35px!important;}
+	.service .service-nav .active .advice{background-position:-116px -35px!important;}
+	.service .service-nav .active .serve{background-position:-55px -35px!important;}
+
+	.guide-content,.console-content,.advice-content,.serve-content,.help-content{
+		padding: 0px 5px 10px 5px;
+	}
+	.console-box{
+		width: 100%;
+		height: auto;
+	}
+	.console-box1,.console-box2{
+		width: 48%;
+		height: auto;
+		margin: 15px 1%;
+		box-sizing:border-box;
+
+	}
+	.box-time{
+		font-size: 12px !important;
+	}
+
+	.guide-nav .line, .help-nav .line{
+		margin: 0px;
+	}
+	.guide-nav a, .help-nav a{
+		padding: 0px 0px 10px 0px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,697 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px "\5B8B\4F53", san-serif;
+	background: #fff;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+table,
+td,
+tr,
+th {
+	font-size: 12px;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	vertical-align: top;
+	border: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+address,
+cite,
+code,
+em,
+th {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.fB {
+	font-weight: bold;
+}
+
+.f12 {
+	font-size: 12px;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+a {
+	color: #2b2b2b;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+
+
+ .clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+	overflow: hidden;
+}
+
+
+/*公共样式*/
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	color: #333;
+	background: #f7f7f7;
+	line-height: 1.7;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: none;
+	font-family: PingFang SC, "Helvitica Neue", Helvitica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+}
+
+
+/*主体背景的样式*/
+
+.global_header {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: .96;
+	z-index: 999;
+}
+
+.global_header .header_inner {
+	width: 1120px;
+	height: 60px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.global_header .header_inner .inner_logo {
+	background-image: url(../../images/wylimg/header_title.png);
+	float: left;
+	display: inline-block;
+	background-position: 0 0;
+	width: 142px;
+	height: 25px;
+	margin-top: 18px;
+	margin-left: 4px;
+	background-repeat: no-repeat;
+}
+
+.fixHeader_tab {
+	display: inline-block;
+	font-size: 16px;
+	margin-left: 30px;
+	cursor: default;
+}
+
+.global_header .header_inner .fixHeader_nologin {
+	float: right;
+	margin-top: 23px;
+}
+
+
+/*登录注册向右浮动*/
+
+.global_header .header_inner .fixHeader_nologin a {
+	padding-left: 10px;
+}
+
+.tabList {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	text-decoration: none;
+	color: #575d6a;
+	margin-right: 20px;
+}
+
+
+/*导航栏 a的样式*/
+
+
+/*隐藏的标题栏的样式*/
+
+.global_mheader {
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	line-height: 44px;
+	width: 100%;
+	background-position-y: 14px;
+	background-size: 65px;
+	background-color: #fff;
+	border-bottom: 1px solid #0fae6f!important;
+}
+
+
+/*小于775px 让大屏隐藏*/
+
+@media only screen and (max-width: 775px) {
+	.global_header {
+		display: none;
+		/*background: yellow;*/
+	}
+	.global_mheader {
+		display: block;
+		background: #fff;
+	}
+	.global_mHeader .mHeader_list,
+	.global_mHeader .mLeft_list {
+		display: none;
+		position: relative;
+		background: #fff;
+		width: 100%;
+		height: 55px;
+		line-height: 55px;
+	}
+	/*利用弹性盒模型  775px以下的样式 点击隐藏和显示*/
+	.mLeft_list ul {
+		display: -webkit-flex;
+		display: -webkit-box;
+		display: flex;
+	}
+	/*隐藏的li的样式 */
+	.mLeft_list ul li {
+		display: block;
+		text-align: center;
+		line-height: 20px;
+		flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		-moz-flex: 1;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		-moz-flex: 1;
+		/*兼容各个浏览器*/
+	}
+}
+
+
+/*列表*/
+
+header ul li {
+	display: block;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	margin-left: 15px;
+	/*display: none;*/
+}
+
+.mBig_logo {
+	height: 60px;
+	background: url(../../images/wylimg/header_title.png) no-repeat center;
+	background-size: 99px 18px;
+}
+
+.mHeader_menu span {
+	position: absolute;
+	top: 17px;
+	float: left;
+	height: 25px;
+	width: 25px;
+	margin-left: 12px;
+	background: url(../../images/wylimg/123.png) no-repeat 0 0;
+	background-size: 100%;
+}
+
+.mHeader_right span {
+	position: absolute;
+	top: 17px;
+	right: 0;
+	float: right;
+	height: 25px;
+	width: 25px;
+	margin-right: 12px;
+	background: url(../../images/wylimg/123.png) no-repeat 5px -50px;
+	background-size: 100%;
+}
+
+.mLeft_list {
+	display: none;
+	position: relative;
+	background: #fff;
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+}
+
+header a:hover {
+	color: #1aaf6f;
+	text-decoration: none;
+}
+
+.mHeader_list {
+	min-width: 521px;
+}
+
+.mHeader_list li {
+	width: 30.3%;
+	height: 50px;
+	background: url(../../images/wylimg/123.png) no-repeat;
+	/*border: 1px solid;*/
+}
+
+.mHeader_list em {
+	line-height: 40px;
+	display: block;
+	/*width: 33.3%;*/
+	float: none;
+}
+
+
+/*隐藏的菜单1的背景*/
+
+.mfirst {}
+
+.mcart {
+	background-position: 0 -375px;
+}
+
+.muser {
+	background-position: 5px -200px;
+}
+
+
+/*点击激活的样式*/
+
+.left_on {
+	background-position: 0 -25px!important;
+}
+
+.right_on {
+	background-position: 5px -75px!important;
+}
+
+
+/*!! 主体开始 !!*/
+
+.img_banner {
+	background-size: auto 100%!important;
+}
+
+@media only screen and (max-width: 775px) {
+	.img_banner {
+		height: 0!important;
+		margin-top: 15%;
+		padding-top: 44.64%;
+	}
+}
+
+.img_banner {
+	/*height: 230px;*/
+	width: 100%;
+	height: 500px;
+	background: url(../../images/wylimg/banner.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+
+/*中间导航 start*/
+
+.service_choose ul li i {
+	font-style: normal;
+	color: #a1a4a8;
+}
+
+.service_choose {
+	width: 1120px;
+	margin: 20px auto;
+}
+
+.service_choose li {
+	background: #fff;
+	width: 20%;
+	height: 92px;
+	position: relative;
+	float: left;
+	color: #a1a4a8;
+	font-size: 16px;
+	text-align: center;
+	border: 1px solid #e2e5e7;
+	border-right: 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+
+/*底部绿线效果*/
+
+.underline {
+	/*border: 1px solid;*/
+	-webkit-transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	/*设置贝司客曲线*/
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	height: 2px;
+	width: 1px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+}
+
+
+/*hover 之后的底部绿线效果*/
+
+.service_choose li:hover .underline {
+	width: 100%;
+	background: #0fae6a;
+	left: 0;
+}
+
+
+/*所有中间的导航条*/
+
+.bg {
+	position: relative;
+	top: 13px;
+	width: 40px;
+	height: 40px;
+	/*background-size: 60px;*/
+	text-align: center;
+	margin: 0 auto;
+	/*border: 1px solid;*/
+}
+
+.bg-one {
+	/*border: 1px solid;*/
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -3px;
+}
+
+.service_choose li:hover .bg-one {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -53px !important;
+}
+
+.bg-two {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -103px;
+}
+
+.service_choose li:hover .bg-two {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -153px!important;
+}
+
+.service_choose li:hover .bg-three {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -253px!important;
+}
+
+.bg-three {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -203px;
+}
+
+.service_choose li:hover .bg-four {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat 2px -352px!important;
+}
+
+.bg-four {
+	width: 54px;
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat 2px -303px;
+}
+
+.service_choose li:hover .bg-five {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -453px!important;
+}
+
+.bg-five {
+	height: 50px;
+	background: url(../../images/wylimg/footer_copy_2.png) no-repeat -6px -403px;
+}
+
+
+/*中间导航 end*/
+
+
+/*图片*/
+
+.itemone {
+	width: 600px;
+}
+
+.itemtwo {
+	width: 500px;
+}
+
+.itemthree {
+	width: 500px;
+}
+
+.itemfour {
+	width: 600px;
+}
+
+.index_content {
+	/*width: 1120px;*/
+	margin: 25px auto;
+}
+
+.index_content img {
+	margin: 8px 2px;
+	height: 300px;
+}
+
+@media only screen and (min-width:700px ) {
+	.index_content{
+	width: 1120px;
+	margin: 25px auto;
+}
+}
+
+.item {
+	height: 310px;
+	background-size: auto 100%!important;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;
+}
+
+.index_content a img:hover {
+	transform: scale(1.05);
+}
+
+.index_content a {
+	display: block;
+	background: #fff;
+	float: left;
+	margin: 0 6px 6px 0;
+	overflow: hidden;
+}
+
+
+/*响应式 未完成*/
+
+nav {
+	/*width: 1200px;*/
+	margin: 0 auto;
+}
+
+.bg+i {
+	position: relative;
+	top: 12px;
+}
+
+@media only screen and (max-width: 1120px) {
+	.index_content .item {
+		display: block;
+		width: auto;
+		height: 200px;
+		padding: 10px;
+		margin: 0px auto;
+	}
+	.index_content a {
+		width: 100%;
+		display: block;
+		margin: 10px auto;
+	}
+	.service_choose {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+
+/*!!   主体结束     !!*/
+
+.index_box {
+	width: 1120px;
+	height: auto;
+	margin: 0 auto 132px;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-pack: center;
+}
+
+footer {
+	width: 100%;
+	margin-top: 40px;
+	background: #0a0303;
+	opacity: .96;
+	color: #585858;
+}
+
+.foot {
+	width: 1120px;
+	margin: 20px auto;
+}
+
+.innear {
+	float: left;
+	margin-left: -15px;
+	padding: 40px;
+}
+
+.innear dt {
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+
+.innear dd {
+	font-size: 15px;
+	text-align: center;
+}
+
+.foot_right {
+	margin: 20px auto;
+	float: right;
+	width: 44%;
+	/*border: 1px solid;*/
+	padding: 40px;
+}
+
+.foot_left {
+	float: left;
+}
+
+.foot_right_arc {
+	float: left;
+}
+
+.foot_right_ace {
+	float: right;
+}
+
+.foot_right_ace img {
+	padding: 4px;
+	position: relative;
+	bottom: 25px;
+	background-color: #fff;
+	border-radius: 2px;
+	margin-left: 25px;
+}
+
+.online {
+	padding: 8px 12px 8px 35px;
+	margin-left: 15px;
+	position: relative;
+	bottom: 10px;
+	left: 35px;
+	color: white;
+	font-size: 14px;
+	background: #19b175 url(../../images/wylimg/在线客服.png) no-repeat 9px;
+	border-radius: 3px;
+}
+
+.foot_copy {
+	height: 20px;
+	width: 30px;
+	padding: 0 75px;
+	background: url(../../images/wylimg/headericon_1.png) no-repeat;
+}
+
+.inner_copy,
+.inner_copy a {
+	color: #c7c8ca;
+	padding: 20px 0;
+}
+
+@media only screen and (max-width:750px) {
+	footer {
+		display: none;
+	}
+	
+	.index_box{
+		display: none;
+	}
+}

@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #C6C6C6;
+}
+.container{
+    width: 90%;
+    padding: 10px 5%;
+}
+.main{
+    background-color: #fff;
+    position: relative;
+}
+.img-list img{
+    width: 100%;
+}
+.img-list li{
+    list-style: none;
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .btn-list{
+        display: none;
+    }
+}
+.btn-list{
+    list-style: none;
+    position: absolute;
+    left: 48%;
+    top: 400px;
+}
+.btn-list li {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 100%;
+    float: left;
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn-list li:hover{
+    background-color: black;
+}
+.btn-list li.current{
+    background-color: #fff;
+}
+.rep-list{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+.rep-list li{
+    margin-top: 20px;
+    float: left;
+    width: 25%;
+    background-color: #fff;
+    margin-left:5% ;
+    border-radius: 5px;
+}
+.rep-list li i{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-image: url(../../images/sjqimages/4_make.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+.rep-list li a{
+    text-decoration: none;
+}
+.rep-list li .item-1{
+    background-position: -12px -20px;
+}
+.rep-list li .item-2{
+    background-position: -12px -138px;
+}
+.rep-list li .item-3{
+    background-position: -12px -260px;
+}
+.rep-list li p{
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+}
+.text .text-1,.text-2,.text-3{
+    border-top: 1px solid #e3e3e3;
+    padding: 15px ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.rep-cls{
+    border: 2px solid green;
+    color :green;
+}
+.text span {
+    float: right;
+}
+.text-a{
+    margin-top: 10px ;
+    list-style: none;
+    font-size: 13px;
+    display: none;
+}
+.text-a a{
+    color: #999;
+    text-decoration: none;
+}
+.text-aa .les{
+    display: none
+}
+.service{
+    margin: 30px 1%;
+    display: none;
+}
+.service-img{
+    color: #d58512;
+    font-weight: bold;
+    font-size: 20px;
+}
+.service-text{
+    color: #999;
+    margin-left: 4%;
+}
+.service-content{
+    margin-top: 20px;
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+    font-size: 20px;
+}
+.service-button{
+    margin: 15px 1% 0 1%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.service-first{
+    font-size: 20px;
+    color: black;
+}
+.service-second{
+    color: #999;
+}
+.service-footer{
+    margin: 50px 1% 0 1%;
+    border: 1px solid #999;
+    background-color: #999;
+    border-radius: 5px;
+}
+.service-third{
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+.service-forth{
+    border: 2px solid green;
+}
+

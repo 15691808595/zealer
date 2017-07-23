@@ -1,0 +1,16 @@
+$(function(){
+	$("#serviceNav>a").click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		/*alert($(this).index());*/
+		$("#serviceContent>div").eq($(this).index()).addClass('content-active').siblings().removeClass('content-active');
+	});
+	$("#guideNav>a").click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		/*alert($(this).index("#guideNav>a"));*/
+		$("#guideSubcontent>div").eq($(this).index("#guideNav>a")).addClass('active').siblings().removeClass('active');
+	});
+	$("#helpNav>a").click(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$("#helpSubcontent>div").eq($(this).index("#helpNav>a")).addClass('active').siblings().removeClass('active');
+	});
+});

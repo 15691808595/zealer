@@ -1,0 +1,249 @@
+body {margin:0; padding:0; font:12px "\5B8B\4F53",san-serif;background:#fff;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}   
+table,td,tr,th{font-size:12px;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+ol,ul {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:12px; font-weight:normal;}
+address,cite,code,em,th {font-weight:normal; font-style:normal;}
+.fB{font-weight:bold;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.left{float:left;}
+.right{float:right;}
+
+a {color:#2b2b2b; text-decoration:none;}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+}
+
+/*公共样式*/
+body {
+	padding: 0;
+	margin: 0;
+    font-size: 13px;
+    color: #333;
+    background: #f7f7f7;
+    line-height: 1.7;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    font-family: PingFang SC,"Helvitica Neue",Helvitica,Arial,"Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei",sans-serif;
+}/*主体背景的样式*/
+
+.global_header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .96;
+    z-index: 999;
+}
+
+.global_header .header_inner {
+    width: 1120px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.global_header .header_inner .inner_logo {
+    background-image: url(../../images/sjqimg/header_title.png);
+    float: left;
+    display: inline-block;
+    background-position: 0 0;
+    width: 142px;
+    height: 25px;
+    margin-top: 18px;
+    margin-left: 4px;
+    background-repeat: no-repeat;
+}
+
+ .fixHeader_tab {
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 30px;
+    cursor: default;
+}
+
+.global_header .header_inner .fixHeader_nologin {
+    float: right;
+    margin-top: 23px;
+}/*登录注册向右浮动*/
+
+.global_header .header_inner .fixHeader_nologin a {
+    padding-left: 10px;
+}
+.tabList {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #575d6a;
+    margin-right: 20px;
+}
+/*导航栏 a的样式*/
+
+/*隐藏的标题栏的样式*/
+.global_mheader  {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    line-height: 44px;
+    width: 100%;
+    background-position-y: 14px;
+    background-size: 65px;
+    background-color: #fff;
+    border-bottom: 1px solid #0fae6f!important;
+}
+
+/*小于775px 让大屏隐藏*/
+@media only screen and (max-width: 775px){
+	.global_header {
+    display: none;
+    /*background: yellow;*/
+	}
+	.global_mheader{
+    display: block;
+    background: #fff;
+
+	}
+	.global_mHeader .mHeader_list, .global_mHeader .mLeft_list {
+    display: none;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+			}
+			
+	/*利用弹性盒模型  775px以下的样式 点击隐藏和显示*/		
+	.mLeft_list ul {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+	}	
+	/*隐藏的li的样式 */	
+	.mLeft_list ul li {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    /*兼容各个浏览器*/
+	}		
+	
+	
+	
+}
+
+/*列表*/
+ul li {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    
+    float: left;
+    margin-left: 15px;
+    /*display: none;*/
+}
+
+.mBig_logo {
+	height: 60px;
+	
+    background: url(../../images/sjqimg/header_title.png) no-repeat center;
+    background-size: 99px 18px;
+}
+
+.mHeader_menu span {
+	position: absolute;
+	top: 17px;
+    float: left;
+    height: 25px;
+    width: 25px;
+    margin-left: 12px;
+    background: url(../../images/sjqimg/123.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+
+.mHeader_right span {
+	position: absolute;
+	top: 17px;
+	right: 0;
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin-right: 12px;
+    background: url(../../images/sjqimg/123.png) no-repeat 5px -50px;
+    background-size: 100%;
+}
+
+.mLeft_list {
+    display: none;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+}
+
+header a:hover{
+	color: #1aaf6f;
+	text-decoration: none;
+}
+.mHeader_list{
+	min-width: 521px;
+}
+.mHeader_list li{
+	width: 30.3%;
+	height: 50px;
+	
+	background: url(../../images/sjqimg/123.png) no-repeat;
+	/*border: 1px solid;*/
+}
+
+.mHeader_list em 
+{	
+   line-height: 40px;
+   display: block;
+   /*width: 33.3%;*/
+   float: none;
+}
+
+
+
+
+/*隐藏的菜单1的背景*/
+.mfirst {
+    
+}
+.mcart {
+    background-position: 0 -375px;
+}
+.muser {
+    background-position: 5px -200px;
+}
+
+/*点击激活的样式*/
+ .left_on {
+    background-position: 0 -25px!important;
+}
+ .right_on {
+    background-position: 5px -75px!important;
+}

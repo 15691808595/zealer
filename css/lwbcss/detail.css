@@ -1,0 +1,411 @@
+body{
+    background-color:#f7f7f7;
+    color: #333;
+}
+a{
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+}
+.fs12{
+    font-size: 12px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs24{
+    font-size: 24px;
+}
+.fn{
+    font-weight: normal;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.container{
+    width: 1120px;
+    margin: 86px auto;
+}
+
+.detail{
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding-left: 50px;
+}
+/*商品左侧*/
+.left-detail{
+    float: left;
+}
+.detail h6{
+    padding: 30px 0;
+    font-weight: normal;
+}
+.product-img{
+    width: 330px;
+    height: 330px;
+    border: 1px solid #e2e5e7;
+}
+.product-img .big-img img{
+    width: 100%;
+}
+.small-img{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+ .small-img li{
+    float: left;
+    width: 40px;
+    height: 40px;
+     margin-right: 10px;
+    border: 2px solid transparent;
+     cursor: pointer;
+}
+.small-img li.active{
+       border: 2px solid #0fae6f;
+}
+.sky{
+    color: #0fae6f;
+}
+.small-img .left-arrow,.small-img .right-arrow{
+    position: relative;
+    width: 20px;
+    height: 40px;
+    background-color: #f7f7f7;
+}
+.small-img .left-arrow{
+    margin-right: 6px;
+}
+.small-img .left-arrow::after,.small-img .right-arrow::after{
+    content: "";
+    position: absolute;
+    top:12px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+}
+.small-img .left-arrow::after{
+    left: 0;
+    border-right-color: #abb0bc ;
+}
+.small-img .right-arrow::after{
+    left: 8px;
+    border-left-color: #abb0bc ;
+}
+.small-img .right-arrow{
+    float: right;
+    margin-right: 0;
+}
+.small-img img{
+    width: 100%;
+}
+.apply-tips{
+    cursor: pointer;
+}
+.apply-tips p{
+    margin-bottom: 15px;
+}
+.apply-tips em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.apply-tips .icon-1{
+    background: url("../../images/lwbimages/img_861bd1e4_alipayicon.png")no-repeat 0 2px;
+    background-size: 14px;
+}
+.apply-tips .icon-2{
+    background: url("../../images/lwbimages/img_861bd595_jdpayicon.png")no-repeat 0 2px;
+    background-size: 14px;
+}
+.apply-tips .icon-3{
+    background: url("../../images/lwbimages/img_f5173a57_S000.png")no-repeat -16px -68px;
+    margin-left: 36px;
+}
+.apply-tips .more{
+    text-decoration: underline;
+    float: right;
+}
+.gray{
+    font-size: 14px;
+    color: #abb0bc;
+}
+
+/*商品右侧*/
+.price-detail{
+    float: left;
+    font-size: 14px;
+    margin-left: 34px;
+}
+.detail-header h4{
+    padding-bottom: 26px;
+    border-bottom: 1px dashed #e2e5e7;
+}
+.price-model .change-model{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #0fae6f;
+    border: 1px solid #0fae6f;
+    border-radius: 2px;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+}
+.product-value{
+    box-sizing: border-box;
+    width: 644px;
+    height: 200px;
+    padding: 0 20px 0 10px;
+    background-color:#f3f9f7;
+}
+.price-model .gray{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 24px 0;
+}
+/*专享服务*/
+.value-left{
+    width: 290px;
+    float: left;
+}
+.value-left .ml{
+    margin-left: 30px;
+}
+.value-left a{
+    text-decoration: underline;
+}
+.value-left i{
+    display: inline-block;
+    width: 21px;
+    height: 24px;
+    margin:  0 20px 0 10px;
+    text-align: center;
+    font-style: normal;
+    color: #fff;
+    background: url("../../images/lwbimages/img_f5173a57_S000.png") no-repeat -22px -20px ;
+    background-size: 66px;
+}
+
+.value-left .input{
+    display: inline-block;
+    width: 190px;
+    height: 30px;
+    margin-left: 26px;
+    border-radius: 5px;
+    background-color:#fff;
+    line-height: 30px;
+    text-indent: 5px;
+    border: solid 1px #e2e5e7;
+}
+.value-left a em,.value-right span:nth-child(1) em{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    margin-right: 3px;
+    font-size: 12px;
+    border: 1px solid #abb0bc;
+    border-radius: 50%;
+}
+.value-right span:nth-child(1) a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.value-left p:nth-child(1){
+    padding: 26px 0;
+}
+.value-left p:nth-child(2){
+    padding-bottom: 28px;
+    border-right: 1px dashed #e2e5e7;
+}
+.value-left p:nth-child(3){
+    border-right: 1px dashed #e2e5e7;
+}
+.value-right{
+    float: left;
+    width: 320px;
+}
+.range-y div:nth-child(1){
+    padding-top: 5px;
+}
+.range-y div{
+    width: 40px;
+    padding-top: 25px;
+    text-align: center;
+}
+.range-detail-text{
+    position: relative;
+    width: 206px;
+    height: 66px;
+    margin-left: 32px;
+    margin-top: 15px;
+    background: #fff url("../../images/lwbimages/img_f5173ef1_dayicon.png") no-repeat 10px 16px ;
+    background-size: 38px;
+    border-left: 1px solid #e2e5e7;
+    border-top: 1px solid #e2e5e7;
+    box-shadow: 5px 5px 10px #e2e5e7;
+}
+.range-detail-text:after{
+    position: absolute;
+    content: "";
+    bottom:-20px;
+    left: 93px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+}
+.range-detail-text p{
+    padding-left: 55px;
+    margin-top: 8px;
+}
+.range-detail{
+    width: 270px;
+    height: 116px;
+    border-left: 1px solid #e2e5e7;
+    border-bottom: 1px solid #e2e5e7;
+    overflow: hidden;
+}
+.orange{
+    color: #ffb41f;
+}
+.range-x-num span{
+    display: inline-block;
+    padding: 5px 11px;
+}
+.range-x-num span:nth-last-child(1){
+    padding: 0;
+}
+/*立即下单*/
+.add-num{
+    margin-top: 30px;
+}
+.add-num span{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.controller-min,.controller-add{
+    width: 28px;
+    background-color:#f1f1f1;
+    border: 1px solid #c4c8d0;
+}
+.controller-num{
+    width: 40px;
+    background-color:#e3e3e3;
+    border-top: 1px solid #c4c8d0;
+    border-bottom: 1px solid #c4c8d0;
+}
+.confirm{
+    width: 130px;
+    background-color:#0fae6f;
+    color: #fff;
+    border-radius: 2px;
+    margin-left: 25px;
+}
+/*商品详情选项卡*/
+.tab-change, .select{
+    margin-top: 20px;
+    border: 1px solid #e2e5e7;
+}
+.tab-change{
+    width: 882px;
+    background-color:#fff;
+}
+.tab-list{
+    background-color:#f9fafa;
+}
+.tab-list span{
+    display: inline-block;
+    width: 294px;
+    border-bottom: 1px solid #e2e5e7;
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.tab-change div img{
+    box-sizing: border-box;
+    width: 882px;
+    padding: 20px;
+}
+.tab-list em{
+    display: inline-block;
+    width: 33px;
+    height: 26px;
+    background:url("../../images/lwbimages/img_861bddd3_Z002detail.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+.tab-list .icon-1{
+    background-position: -0px -496px;
+}
+.tab-list .icon-2{
+    background-position: -0px -169px;
+}
+.tab-list .icon-3{
+    background-position: -0px -235px;
+}
+.tab-list .active .icon-1{
+    background-position: -0px -530px;
+}
+.tab-list .active .icon-2{
+    background-position: -0px -202px;
+}
+.tab-list .active .icon-3{
+    background-position: -0px -268px;
+}
+.tab-list .active{
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: 2px solid #0fae6f;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #e2e5e7;
+    color: #0fae6f;
+}
+.tab-target{
+    display: none;
+}
+.tab-target.active{
+    display: block;
+}
+.select{
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+.select h4{
+    font-weight: normal;
+    line-height: 45px;
+    background-color:#f9fafa;
+    border: 1px solid #e2e5e7;
+    border-bottom: none;
+}
+.select div{
+    margin-bottom: 30px;
+    background-color:#fff;
+    border: 1px solid #e2e5e7;
+}
+.select div p{
+    line-height: 25px;
+}
+.select img{
+    display: block;
+    width: 180px;
+    margin:  0 auto;
+    padding-top: 20px;
+}

@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #C6C6C6;
+}
+.container{
+    width: 90%;
+    padding: 10px 5%;
+}
+.main{
+    background-color: #fff;
+    height: 1400px;
+}
+.content{
+    margin:10px 4% 0 4%;
+    background-color: #4cae4c;
+    padding: 20px 2% 0 2%;
+    line-height: 30px;
+    border-radius: 5px;
+}
+.content p{
+    color: #fff;
+    font-size: 20px;
+}
+.content span{
+    font-size: 13px;
+    cursor: pointer;
+}
+.content span:hover{
+    text-decoration: underline;
+}
+.content .text{
+    font-size: 14px;
+}
+.select {
+    margin:10px 4% 0 4%;
+    overflow: hidden;
+}
+.select-left{
+    display: inline-block;
+    color:#999;
+    font-size: 20px;
+    float: left;
+}
+.select-right{
+    float: right;
+}
+.select-title span{
+    text-align: right;
+}
+.select p{
+    color: #333;
+    font-size: 17px;
+}
+.phone{
+    list-style: none;
+    margin: 40px 5%;
+    overflow: hidden;
+}
+.phone a{
+    text-decoration: none;
+    color: #333;
+}
+.phone li{
+    float: left;
+    width: 40%;
+    margin: 30px 4%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+.text .text-1,.text-2,.text-3{
+    border-top: 1px solid #e3e3e3;
+    padding: 15px ;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.rep-cls{
+    border: 2px solid green;
+}
+.text span {
+    float: right;
+}
+.text-a{
+    margin-top: 10px ;
+    list-style: none;
+    font-size: 13px;
+    display: none;
+}
+.text-a a{
+    color: #999;
+}
+.text-a li a:hover{
+    text-decoration: underline;
+}
+.text-aa .les {
+    display: none
+}
+.service{
+    width: 100%;
+    margin: 30px 1%;
+    display: none;
+    text-align: left;
+}
+.service-img{
+    color: #d58512;
+    font-weight: bold;
+    font-size: 20px;
+}
+.service-text{
+    color: #999;
+    margin-left: 4%;
+}
+.service-content{
+    margin-top: 20px;
+    border-top: 1px solid #e3e3e3;
+    padding: 10px;
+    font-size: 20px;
+}
+.service-button{
+    margin: 15px 1% 0 1%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.service-first{
+    font-size: 20px;
+    color: black;
+}
+.service-second{
+    color: #999;
+}
+.service-footer{
+    margin: 50px 1% 0 1%;
+    border: 1px solid #999;
+    background-color: #999;
+    border-radius: 5px;
+}
+.service-third{
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+.service-forth{
+    border: 2px solid green;
+}
+.rep-cls{
+    border: 2px solid green;
+    color :green;
+}
+.rep-cln{
+    background-color: green;
+}
